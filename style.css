@@ -1,0 +1,127 @@
+/* Css Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =================================================================================================================== */
+*{
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+body{
+    background-color: #F7FFDD;
+    width: 100vw;
+}
+
+div{
+    width:70vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+#event{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-bottom: 1vh;
+    
+}
+#event::placeholder{
+    color: black;
+}
+#eventDate{
+    width: 15em;
+}
+/* This :focus part takes outline out of the input and date */
+#eventDate:focus, input:focus{
+    outline: none;
+}
+
+#add{
+    margin-left: 1em;
+    width: 8em;
+}
+
+button{
+    background-color: #d0e3cc;
+    border-radius: 1em;
+    border: solid .2em #B6D4B0 ; 
+}
+p button:hover{
+    background-color: #a71005;
+    border-color: rgb(109, 4, 4);
+    color: white;
+}
+p button{
+    margin: 0 .3rem ;
+}
+.formStyle, form input{
+    background-color: #d0e3cc;
+    border-radius: 10rem;
+    border: solid .2em #B6D4B0 ;
+    margin-right: .2rem;
+    margin-top: .2rem;
+}
+h1{
+    text-decoration: underline .1em #B6D4B0;
+    font-size: xx-large;
+    padding: 1rem;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+p{
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+aside{
+    margin-left: 2rem;
+    width: 15rem;
+}
+
+
