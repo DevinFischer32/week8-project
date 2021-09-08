@@ -5,11 +5,11 @@ const app = express();
 
 // Endpoint for homepage
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../index.html"));
+  res.sendFile(path.join(__dirname, "../client/index.html"));
 });
 
 //Endpoint for CSS
-app.use("/css", express.static(path.join(__dirname, "../style.css")))
+app.use("/css", express.static(path.join(__dirname, "../client/style.css")))
 
 
 
@@ -17,5 +17,5 @@ app.use("/css", express.static(path.join(__dirname, "../style.css")))
 const port = process.env.PORT || 4005;
 
 app.listen(port, ()=>{
-    console.log(`Listening on port ${port}`)
+    console.log(`Transcribing on port ${port}`)
 })
