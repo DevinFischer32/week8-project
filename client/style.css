@@ -93,6 +93,11 @@ p button:hover{
     border-color: rgb(109, 4, 4);
     color: white;
 }
+.edit:hover{
+    background-color: white ;
+    border-color: black ;
+    color: black;
+}
 p button{
     margin: 0 .3rem ;
 }

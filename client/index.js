@@ -15,6 +15,7 @@ function addEvent (e) {
 
     const editBtn = document.createElement('button')
     editBtn.textContent = '✎'
+    editBtn.classList.add('edit')
     editBtn.addEventListener('click', editSchedule)
     item.appendChild(editBtn)
 
@@ -80,6 +81,3 @@ function revealMessage () {
         message.classList.add('hide') // this adds it back making it visible for a moment 
     }, 1000)
 }
-
-
-//editable
