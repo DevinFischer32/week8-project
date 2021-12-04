@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css">
-    <link rel="stylesheet" href="/client/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
-    
-    <title>Schedule Planner</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css" />
+    <link rel="stylesheet" href="/client/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap"
+      rel="stylesheet"
+    />
 
- 
-        <div>
-            <h1>Schedule Planner</h1>
-    
-            <form id="form" autocomplete="off">
-            
-                <input class="formStyle" id='event' type="text" name="event" placeholder="Add Event">
-                <input class="formStyle" id="eventDate" type="date" name="date" >
-                <button class="formStyle" type="submit" id="add"> Add </button>
-            
-                <span></span>
-            </form>
-        </div>
+    <title>Schedule Planner</title>
+  </head>
+  <body>
+    <div>
+      <h1>Schedule Planner</h1>
+
+      <form id="form" autocomplete="off">
+        <input
+          class="formStyle"
+          id="event"
+          type="text"
+          name="event"
+          placeholder="Add Event"
+        />
+        <input class="formStyle" id="eventDate" type="date" name="date" />
+        <button class="formStyle" type="submit" id="add">Add</button>
+
+        <span></span>
+      </form>
+    </div>
     <aside id="message"></aside>
-   
-<script src="/js"></script>
-<script src="/client/index.js"></script>
-</body>
+
+    <script src="/js"></script>
+    <script src="/client/index.js"></script>
+  </body>
 </html>
