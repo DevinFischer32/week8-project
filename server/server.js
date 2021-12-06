@@ -10,6 +10,7 @@ app.get("/", (req, res) => {
 
 //Endpoint for CSS
 app.use("/logo", express.static(path.join(__dirname, "../client/Logo")));
+app.use("/favicon", express.static(path.join(__dirname, "../favicon.ico")));
 app.use("/css", express.static(path.join(__dirname, "../client/style.css")));
 
 app.use("/js", express.static(path.join(__dirname, "../client/index.js")));
