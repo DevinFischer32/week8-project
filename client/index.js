@@ -66,6 +66,7 @@ function update(e) {
   list.childNodes[position].appendChild(editBtn);
 
   const deleteBtn = document.createElement("button");
+
   deleteBtn.classList.add("deleteBtn");
   deleteBtn.addEventListener("click", removeEvent);
   list.childNodes[position].appendChild(deleteBtn);
